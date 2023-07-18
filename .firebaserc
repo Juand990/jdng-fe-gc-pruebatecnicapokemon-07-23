@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pruebatecpokemon": {
+      "hosting": {
+        "jdng-fe-gc-pruebatecnicapokemon-07-23": [
+          "pruebatecpokemon"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pruebatecpokemon"
+  }
+}

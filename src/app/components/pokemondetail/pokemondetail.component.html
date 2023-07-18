@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 ms-0 mt-3 mx-2">
+            <div class="char">
+                <img src={{data.sprites.front_default}}>
+            </div>
+            <div>
+                <table class="table table-primary">
+                    <tr class="table-primary">
+                        <th colspan="6">Nombre</th>
+                    </tr>
+                    <tr class="table-primary">
+                        <td colspan="6" class="table-primary">{{data.name}}</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <th colspan="6">Habilidades</th>
+                    </tr>
+                    <tr class="table-primary">
+                        <td colspan="2" class="table-primary" *ngFor="let abi of data.abilities">
+                            {{abi.ability.name}}
+                        </td>
+                    </tr>
+                    <tr class="table-primary">
+                        <th colspan="6">Stats</th>
+                    </tr>
+                    <tr class="table-primary">
+                        <td class="table-primary" *ngFor="let stat of data.stats">                            
+                            {{stat.stat.name}}    
+                        </td> 
+                    </tr>    
+                    <tr class="table-primary">                    
+                        <td class="table-primary" *ngFor="let stat of data.stats">                                                     
+                            {{stat.base_stat}}
+                        </td>
+                    </tr>
+                    <tr class="table-primary">
+                        <th colspan="6">Tipo</th>
+                    </tr>
+                    <tr class="table-primary">
+                        <td class="{{type.type.name}}" colspan="3" class="table-primary" *ngFor="let type of data.types">
+                             {{type.type.name}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
